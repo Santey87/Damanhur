@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Инициация в Храмах Человечества — Даманхур · 17–22 июня 2026</title>
+<meta name="description" content="Авторский ретрит в Даманхуре, Северная Италия, 17–22 июня 2026. Шесть дней инициации в Храмах Человечества."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+/* ========== Font ========== */
+@font-face{font-family:'PassionsConflict';src:url('https://fs.gcfiles.net/fileservice/file/download/a/17088/sc/195/h/37a7c72d3057611d2da9c9c296b7ff0a.otf') format('opentype');font-weight:normal;font-style:normal;font-display:swap}
+
+/* ========== Root / Body ========== */
+:root{font-size:16px!important}
+body{font-family:'Montserrat',sans-serif!important;line-height:1.5!important;background:#0f0c09!important;margin:0}
+
+/* ========== NM Root ========== */
+.nm-root{color:#1c1814;background:#f4ecd8;font-family:'Montserrat',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.nm-display{font-family:'Philosopher',serif}
+
+/* ========== Grain ========== */
+.nm-grain::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.11  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+
+/* ========== Mesh gradient ========== */
+.nm-mesh{position:absolute;inset:-10%;z-index:0;filter:blur(60px) saturate(115%);background:radial-gradient(38% 42% at 22% 28%,rgba(184,146,74,.55),transparent 70%),radial-gradient(34% 38% at 78% 22%,rgba(212,176,106,.45),transparent 72%),radial-gradient(40% 44% at 30% 78%,rgba(122,61,31,.45),transparent 72%),radial-gradient(38% 42% at 80% 80%,rgba(28,24,20,.55),transparent 72%),radial-gradient(50% 60% at 50% 50%,rgba(244,236,216,.25),transparent 70%);background-color:#1c1814;animation:nm-mesh-move 24s ease-in-out infinite alternate}
+@keyframes nm-mesh-move{0%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-2%,1.5%,0) scale(1.06)}100%{transform:translate3d(2%,-1.5%,0) scale(1.04)}}
+.nm-vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 35%,rgba(15,12,9,.65) 100%);z-index:1}
+
+/* ========== Spinning / floating ========== */
+.nm-spin-slow{animation:nm-spin 80s linear infinite;transform-origin:50% 50%}
+.nm-spin-rev{animation:nm-spin 120s linear infinite reverse;transform-origin:50% 50%}
+@keyframes nm-spin{to{transform:rotate(360deg)}}
+.nm-float{animation:nm-float 9s ease-in-out infinite}
+.nm-float-2{animation:nm-float 11s ease-in-out infinite -3s}
+@keyframes nm-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+
+/* ========== Divider ========== */
+.nm-divider{display:flex;align-items:center;justify-content:center;gap:18px;color:#b8924a}
+.nm-divider::before,.nm-divider::after{content:"";height:1px;flex:1;max-width:140px;background:linear-gradient(90deg,transparent,#b8924a,transparent)}
+
+/* ========== Buttons ========== */
+.nm-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 34px;font-family:'Philosopher',serif;font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;background:linear-gradient(180deg,#b8924a,#8a6a2f);color:#f4ecd8;border:1px solid #6b4f1f;box-shadow:0 10px 30px -12px rgba(122,61,31,.55),inset 0 1px 0 rgba(255,255,255,.18);transition:transform .25s,box-shadow .25s,filter .25s;cursor:pointer;text-decoration:none;border-radius:4px}
+.nm-btn:hover{transform:translateY(-2px);filter:brightness(1.05);box-shadow:0 18px 40px -12px rgba(122,61,31,.7),inset 0 1px 0 rgba(255,255,255,.25)}
+.nm-btn-ghost{background:transparent;color:#f4ecd8;border:1px solid #d4b06a;box-shadow:none}
+.nm-btn-ghost:hover{background:rgba(184,146,74,.12)}
+
+/* ========== Paper ========== */
+.nm-paper{background-color:#f4ecd8;background-image:radial-gradient(rgba(122,61,31,.06) 1px,transparent 1px),radial-gradient(rgba(28,24,20,.05) 1px,transparent 1px);background-size:22px 22px,17px 17px;background-position:0 0,11px 9px}
+
+/* ========== Headings ========== */
+.nm-h-eyebrow{font-family:'Montserrat',sans-serif;letter-spacing:.32em;text-transform:uppercase;font-size:.78rem;color:#7a3d1f}
+.nm-h-title{font-family:'Philosopher',serif;line-height:1.05}
+
+/* ========== Passions ========== */
+.nm-passions{font-family:'PassionsConflict',cursive;font-size:clamp(1.6rem,4vw,2.8rem);line-height:.7;color:#d4b06a}
+
+/* ========== Letter animation ========== */
+.nm-letter{display:inline-block;opacity:0;animation:nm-letter-in .4s ease forwards}
+.nm-letter.space{width:.3em}
+@keyframes nm-letter-in{0%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:translateY(0)}}
+
+/* ========== Icon float ========== */
+.nm-icon-float{animation:nm-icon-hover 4s ease-in-out infinite}
+.nm-icon-float:nth-child(2){animation-delay:-.8s}
+.nm-icon-float:nth-child(3){animation-delay:-1.6s}
+@keyframes nm-icon-hover{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-8px) scale(1.03)}}
+
+/* ========== Video section ========== */
+.nm-video-section{position:relative;height:300vh}
+.nm-video-sticky{position:sticky;top:0;height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.nm-video-frame{transition:width .1s linear,height .1s linear,border-radius .1s linear;overflow:hidden;border-radius:20px}
+.nm-video-frame video{width:100%;height:100%;object-fit:cover}
+
+/* ========== Point bullet ========== */
+.nm-point-bullet{display:inline-block;animation:nm-point-pulse 2s ease-in-out infinite}
+@keyframes nm-point-pulse{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.3);opacity:1}}
+
+/* ========== Card dark ========== */
+.nm-card-dark{background:linear-gradient(180deg,#1c1814,#2a221b);border:1px solid rgba(184,146,74,.4);color:#f4ecd8}
+
+/* ========== Hero passions ========== */
+.nm-hero-passions{font-size:clamp(2.13rem,5.3vw,3.73rem)}
+
+/* ========== Immersion passions ========== */
+.nm-passions-immersion{line-height:.47}
+
+/* ========== Day passions ========== */
+.nm-day-passions{font-size:clamp(2.08rem,5.2vw,3.64rem)}
+
+/* ========== Responsive ========== */
+@media(max-width:768px){
+  .nm-hero-passions{font-size:clamp(2.88rem,7.2vw,5.04rem)}
+  .nm-hero-h1{font-size:clamp(48px,12vw,120px)!important;margin-bottom:1.5rem!important}
+  .nm-hero-location{font-size:calc(1.1rem * 1.3 / 1.4)!important}
+  .nm-cta-price{font-size:2.6rem!important}
+  .nm-hero-top-text{margin-top:30px!important}
+  .nm-hero-divider{margin-top:-.5rem;margin-bottom:1rem!important}
+  .nm-passions-immersion{line-height:.54}
+  .nm-day-passions{font-size:clamp(2.4rem,6vw,4.2rem)}
+}
+@media(min-width:769px){
+  .nm-day-passions{line-height:.58!important}
+}
+
+/* ========== AOS timing ========== */
+[data-aos]{transition-timing-function:cubic-bezier(.22,.61,.36,1)!important}
+</style>
+</head>
+<body>
+<div class="nm-root" id="nm-app">
+
+<!-- ========== HEADER ========== -->
+<header id="site-header" class="fixed top-0 z-40 w-full backdrop-blur transition-transform duration-300" style="position:fixed;top:0;left:0;right:0;z-index:40;width:100%;background:rgba(15,12,9,.85);border-bottom:1px solid rgba(184,146,74,.3);backdrop-filter:blur(10px);transition:transform .3s ease;will-change:transform">
+  <div class="max-w-6xl mx-auto flex items-center justify-center" style="padding:10px 24px">
+    <a href="#top"><img src="https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/193/h/65313cf68fdaf6f3165d2124db45b6b6.png" alt="Логотип" style="height:90px"/></a>
+  </div>
+</header>
+
+<!-- ========== BLOCK 1: HERO ========== -->
+<section id="top" class="relative overflow-hidden nm-grain" style="min-height:100vh;color:#f4ecd8">
+  <div class="nm-mesh"></div>
+  <div class="nm-vignette"></div>
+
+  <!-- Decorations -->
+  <svg class="absolute nm-spin-slow" style="z-index:2;top:8%;right:-6%;width:520px;height:520px;opacity:.18" viewBox="0 0 200 200" fill="none" stroke="#d4b06a" stroke-width="0.6"><circle cx="100" cy="100" r="90"/><circle cx="100" cy="100" r="72"/><circle cx="100" cy="100" r="54"/><line x1="100" y1="10" x2="100" y2="190"/><line x1="10" y1="100" x2="190" y2="100"/><line x1="36" y1="36" x2="164" y2="164"/><line x1="164" y1="36" x2="36" y2="164"/><circle cx="100" cy="100" r="8" fill="#d4b06a" stroke="none"/></svg>
+  <svg class="absolute nm-spin-rev" style="z-index:2;bottom:-12%;left:-8%;width:600px;height:600px;opacity:.12" viewBox="0 0 200 200" fill="none" stroke="#b8924a" stroke-width="0.5"><polygon points="100,10 190,100 100,190 10,100"/><polygon points="100,30 170,100 100,170 30,100"/><circle cx="100" cy="100" r="40"/><path d="M100 60 L130 140 L70 140 Z"/><path d="M100 140 L130 60 L70 60 Z"/></svg>
+  <div class="absolute nm-float" style="z-index:2;top:18%;left:8%;opacity:.5"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#d4b06a" stroke-width="1"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2" fill="#d4b06a"/></svg></div>
+  <div class="absolute nm-float-2" style="z-index:2;bottom:22%;right:10%;opacity:.45"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#d4b06a" stroke-width="1"><path d="M12 2 L20 18 L4 18 Z"/><line x1="6" y1="13" x2="18" y2="13"/></svg></div>
+  <div class="absolute nm-float" style="z-index:2;top:62%;left:14%;opacity:.4"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d4b06a" stroke-width="1"><path d="M12 22 L12 12 M12 12 L7 7 M12 12 L17 7 M7 4 a3 3 0 1 1 0 6 a3 3 0 1 1 0 -6 M17 4 a3 3 0 1 1 0 6 a3 3 0 1 1 0 -6"/></svg></div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-6 flex flex-col items-center text-center" style="min-height:100vh;justify-content:center;padding-top:90px;padding-bottom:32px">
+    <div data-aos="fade-down" data-aos-delay="100" class="nm-h-eyebrow nm-hero-top-text mb-4" style="color:#fff;font-size:calc(.78rem * 1.3);margin-top:0">Живой мистериальный ретрит</div>
+    <p data-aos="fade-up" data-aos-delay="150" class="tracking-widest mb-6 nm-hero-location" style="color:#d4b06a;font-size:calc(1.1rem * 1.3)">Турин — Даманхур · Северная Италия</p>
+    <p data-aos="fade-up" data-aos-delay="200" class="tracking-widest mb-8" style="color:#d4b06a;font-size:calc(1.1rem * 1.3)"><span style="font-weight:700;font-size:calc(1.1rem * 1.5)">17–22</span> июня 2026</p>
+    <h1 data-aos="fade-up" data-aos-delay="300" class="nm-display font-bold mb-10 nm-hero-h1" style="color:#f4ecd8;font-size:clamp(32px,8vw,80px);line-height:1.1">Инициация<br/><span style="color:#d4b06a">в Храмах Человечества</span></h1>
+    <div class="nm-divider w-full max-w-md nm-hero-divider mb-8" data-aos="fade-up" data-aos-delay="400"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d4b06a" stroke-width="1"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3" fill="#d4b06a"/></svg></div>
+    <div data-aos="fade-up" data-aos-delay="500" class="max-w-3xl mb-6 nm-passions nm-hero-passions" style="color:#fff">Раскройте Ваше истинное место силы через узнавание Себя в живом дыхании Храмов Человечества</div>
+    <div data-aos="fade-up" data-aos-delay="700" class="flex flex-col sm:flex-row gap-4" style="margin-top:20px">
+      <button onclick="if(typeof gcShowPopUp==='function')gcShowPopUp('b-71004')" class="nm-btn">Стать участником</button>
+      <a href="#program" class="nm-btn nm-btn-ghost">Программа путешествия</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SCROLL VIDEO ========== -->
+<div id="video-section" class="nm-video-section nm-paper">
+  <div class="nm-video-sticky">
+    <div id="video-frame" class="nm-video-frame" style="width:60vw;height:60vw">
+      <video src="https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/194/h/9c50f3f344629f86ab5a24af5bad3256.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </div>
+</div>
+
+<!-- ========== BLOCK 2: LIGHT ========== -->
+<section class="nm-paper relative overflow-hidden">
+  <div class="max-w-5xl mx-auto px-6 py-20 md:py-28">
+    <h2 data-aos="fade-up" class="nm-h-title text-3xl md:text-5xl text-center mb-16" style="color:#1c1814">Мистериальное Путешествие —<br/>Живой Ретрит — это…</h2>
+    <div class="space-y-10" id="icon-list">
+      <!-- filled by JS -->
+    </div>
+    <div class="mt-16 text-center" data-aos="fade-up">
+      <div class="nm-passions nm-passions-immersion max-w-4xl mx-auto" style="color:#862D01;font-size:clamp(2.88rem,7.2vw,5.04rem)">Ваше погружение в сакральные точки Земли не как туриста, взирающего на застывшие памятники архитектуры, а как живого участника диалога с энергиями и памятью планеты</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BLOCK 3: DARK — TOURIST vs PARTICIPANT ========== -->
+<section class="relative overflow-hidden" style="background:#2C2724;color:#f4ecd8">
+  <div class="max-w-5xl mx-auto px-6 py-20 md:py-28">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <div class="nm-h-eyebrow mb-4" style="color:#d4b06a;font-size:.94rem">Функциональное присутствие</div>
+      <h2 class="nm-h-title text-4xl md:text-5xl" style="color:#f4ecd8">Турист или Участник</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8" data-aos="fade-up" data-aos-delay="200">
+      <div class="p-8 rounded-lg" style="border:1px solid rgba(184,146,74,.3);background:rgba(28,24,20,.6)">
+        <h3 class="nm-h-title text-2xl mb-6" style="color:#f4ecd8">Турист</h3>
+        <ul class="space-y-4" id="tourist-list"></ul>
+      </div>
+      <div class="p-8 rounded-lg" style="border:1px solid rgba(212,176,106,.8);background:rgba(28,24,20,.8);box-shadow:0 0 40px rgba(212,176,106,.25),0 8px 32px rgba(0,0,0,.4)">
+        <h3 class="nm-h-title text-2xl mb-6 font-bold" style="color:#f4ecd8">Участник</h3>
+        <ul class="space-y-4" id="participant-list"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BLOCK 4: PARALLAX ========== -->
+<section class="relative overflow-hidden" style="min-height:60vh">
+  <div class="absolute inset-0 z-0 overflow-hidden">
+    <img id="parallax-img" src="https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/403/h/def7893eee79a092dd2f7eafbc2b3582.jpg" alt="" class="w-full object-cover" style="position:absolute;top:-40%;left:0;width:100%;height:180%"/>
+  </div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="max-w-lg" data-aos="fade-right">
+      <h2 class="nm-h-title text-3xl md:text-5xl mb-8" style="color:#1c1814">Почему Север Италии?</h2>
+      <p class="text-base md:text-lg leading-relaxed" style="color:#2a221b;background:rgba(244,236,216,.85);padding:24px;border-radius:8px">Север Италии — это сакральный эпицентр, где мощь Альп встречается с точками выхода древней информационной сети планеты. Эти предгорья веками хранят память о мистериях света и культах Митры, превращая земли Пьемонта в живую алхимическую лабораторию под открытым небом. Здесь, на пересечении энергетических магистралей Земли, Летнее Солнцестояние становится не просто календарной датой, а порталом в изначальное время. Ваше присутствие в этой точке в дни наивысшего Солнца позволяет заземлить Звездные коды напрямую в клетки тела, превращая древнюю историю мест в Вашу личную силу.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BLOCK 5: SACRED MAP ========== -->
+<section id="program" style="background:#2C2724;color:#f4ecd8">
+  <div class="max-w-5xl mx-auto px-6 pt-16 pb-8 md:pb-12 text-center" data-aos="fade-up">
+    <h2 class="nm-h-title text-3xl md:text-5xl" style="color:#f4ecd8">Сакральная Карта Живого Ретрита</h2>
+  </div>
+</section>
+
+<!-- Day 1 -->
+<section class="relative overflow-hidden" style="background:#2C2724;color:#f4ecd8">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-right">
+      <div class="nm-h-eyebrow mb-3" style="color:#d4b06a;font-size:calc(.78rem * 1.2)">День первый — Турин</div>
+      <h3 class="nm-h-title text-3xl md:text-4xl mb-4" style="color:#f4ecd8">Порог</h3>
+      <div class="nm-passions mb-6 nm-day-passions" style="line-height:1.0">Где тень и свет держат друг друга за руки</div>
+      <p class="text-base md:text-lg leading-relaxed mb-4" style="color:#ebe0c5">Здесь мы совершаем переход из плотной реальности в сакральное пространство Мистерии через врата Турина — города, известного как точка пересечения белой и черной магии. В этом месте полярности не воюют, а удерживают между собой натянутую струну, на которой звучит сама жизнь.</p>
+      <p class="text-base md:text-lg leading-relaxed mb-4" style="color:#ebe0c5">Мостовые Турина помнят алхимиков, умевших сохранять целостность на острие противоположностей, не ломаясь под их весом. Это ваш первый опыт сонастройки: тело начинает перестраивать свою внутреннюю геометрию еще до входа в горы, обретая мастерство истинного равновесия.</p>
+    </div>
+    <div data-aos="fade-left" data-aos-delay="150"><img src="https://feel-the-balance.top/pl/fileservice/user/file/download?h=57915e7d185eb96674c44f018c70b7d2.png" alt="День 1" class="w-full"/></div>
+  </div>
+</section>
+
+<!-- Day 2 -->
+<section class="nm-paper relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-left" class="md:order-2">
+      <div class="nm-h-eyebrow mb-3" style="color:#7a3d1f;font-size:calc(.78rem * 1.2)">День второй — Даманхур<br/>(Подземные Храмы)</div>
+      <h3 class="nm-h-title text-3xl md:text-4xl mb-4" style="color:#1c1814">Первый Вход</h3>
+      <div class="nm-passions mb-6 nm-day-passions" style="color:#3b2510;line-height:1.0">Когда тело вспоминает то, чего не знает ум</div>
+      <p class="text-base md:text-lg leading-relaxed mb-4" style="color:#2a221b">Утром мы уходим в предгорья Альп, в точку соприкосновения тектонических плит, где пульсирует живая энергия планеты. Здесь, на глубине тридцати метров внутри скалы, скрыты легендарные Храмы Человечества в Даманхуре — гигантская подземная лаборатория Духа, десятилетиями высекаемая вручную как проекция внутреннего космоса человека.</p>
+      <p class="text-base md:text-lg leading-relaxed mb-4" style="color:#2a221b">В этом пространстве мы раскроем сакральную карту души через соприкосновение с живой геометрией камня и древними кодами Атлантиды, впечатанными в материю.</p>
+      <p class="text-base md:text-lg leading-relaxed mb-4" style="color:#2a221b">Вечером ждет сеанс Эласель: прямая работа с вашим телом для фиксации новых кодов и энергий.</p>
+    </div>
+    <div data-aos="fade-right" data-aos-delay="150" class="md:order-1"><img src="https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/297/h/f6688bc6044dbaa1c6a70d986a7be73f.png" alt="День 2" class="w-full"/></div>
+  </div>
+</section>
+
+<!-- Day 3 -->
+<section class="relative overflow-hidden" style="background:#2C2724;color:#f4ecd8">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-right">
+      <div class="nm-h-eyebrow mb-3" style="color:#d4b06a;font-size:calc(.78rem * 1.2)">День третий</div>
+      <h3 class="nm-h-title text-3xl md:text-4xl mb-4" style="color:#f4ecd8">Сакральный Лес</h3>
+      <div class="nm-passions mb-6 nm-day-passions" style="line-height:1.0">Когда земля говорит через корни, а небо — через кроны</div>
+      <p class="text-base md:text-lg leading-relaxed mb-4" style="color:#ebe0c5">Над Храмами Даманхура растет Лес — живая антенна, созданная сознательно для проведения космических токов. Его корни касаются сводов подземных залов, а кроны уходят в энергетические линии космоса. Это мост между мирами, выстроенный из живой материи, где мы продолжим раскрывать вашу сакральную карту.</p>
+      <p class="text-base md:text-lg leading-relaxed mb-4" style="color:#ebe0c5">В этом пространстве мы продолжим путь к себе:</p>
+      <div class="mt-6 space-y-5" id="day3-items"></div>
+    </div>
+    <div data-aos="fade-left" data-aos-delay="150"><img src="https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/9/h/968cf0057728fb0811db71166483a7e3.png" alt="День 3" class="w-full"/></div>
+  </div>
+</section>
+
+<!-- Day 4 -->
+<section class="nm-paper relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-right">
+      <div class="nm-h-eyebrow mb-3" style="color:#7a3d1f;font-size:calc(.78rem * 1.2)">День четвёртый — <strong>Солнцестояние</strong></div>
+      <h3 class="nm-h-title text-3xl md:text-4xl mb-6" style="color:#1c1814">Врата Света</h3>
+      <p class="text-base md:text-lg leading-relaxed mb-6" style="color:#2a221b">Оказаться в Даманхуре в день Солнцестояния — это особый дар. В этот момент планета словно замирает, подставляя себя солнцу, и начинает звучать на предельной частоте. Здесь всё пространство: от глубоких подземных залов до верхушек сакральных деревьев, становится единым живым порталом. Мы войдем в этот мощный поток, чтобы прожить точку наивысшего света в самом центре планетарного алхимического процесса.</p>
+      <div class="space-y-5 mt-8" id="day4-items"></div>
+    </div>
+    <div data-aos="fade-left" data-aos-delay="150"><img src="https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/289/h/eb57feea5117c3df1c3e0b99f0118b49.png" alt="День 4" class="w-full"/></div>
+  </div>
+</section>
+
+<!-- Day 5 -->
+<section class="relative overflow-hidden" style="background:#2C2724;color:#f4ecd8">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="mb-10" data-aos="fade-right">
+      <div class="nm-h-eyebrow mb-3" style="color:#d4b06a;font-size:calc(.78rem * 1.2)">День пятый — Храм Байта и Ритуал Триада</div>
+      <div class="nm-passions mb-6 nm-day-passions" style="line-height:1.0">Где три потока времени сходятся в одну точку</div>
+      <p class="text-base md:text-lg leading-relaxed mb-6" style="color:#ebe0c5">Мы идем в <strong>Храм Байта</strong> — зал, посвященный тому, что находится между мирами. Это территория эзотерической физики, описывающей законы, которые наука только начинает открывать. Мы дадим вам необходимый контекст перед входом, чтобы ум перестал сопротивляться и позволил телу просто принять этот опыт.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div data-aos="fade-up">
+        <div class="relative mb-6"><img src="https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/188/h/e2d1fd9a189007634aa028be485ca73d.png" alt="Ритуал Триада" class="w-full"/></div>
+        <p class="text-base leading-relaxed" style="color:#ebe0c5"><strong style="color:#d4b06a">Ритуал Триада в Зале Зеркал:</strong> Прошлое, настоящее и будущее, которые в жизни текут параллельно, здесь сойдутся в одной точке. В этом единстве проявится ваша настоящая линия суверенности, тот личный код, с которым вы пришли в этот мир. Зеркала и само пространство Храма помогут его вспомнить.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="150">
+        <div class="relative mb-6"><img src="https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/485/h/8c6c70563896645f05d662f2635ee225.png" alt="Ужин в замке" class="w-full"/></div>
+        <p class="text-base leading-relaxed" style="color:#ebe0c5"><strong style="color:#d4b06a">Ужин в замке Castello di Pavone:</strong> По традиции великие инициации завершаются пиром. Это нужно телу как подтверждение: земная жизнь не то, от чего стоит бежать, а то, ради чего всё затевалось. Вы сядете за стол под закатным небом Пьемонта уже другими, просто потому, что этот путь пройден.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 6 -->
+<section class="nm-paper relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-left" class="md:order-2">
+      <div class="nm-h-eyebrow mb-3" style="color:#7a3d1f;font-size:calc(.78rem * 1.2)">День шестой — Открытый Храм</div>
+      <h3 class="nm-h-title text-3xl md:text-4xl mb-4" style="color:#1c1814">Открытый Храм</h3>
+      <div class="nm-passions mb-6 nm-day-passions" style="color:#3b2510;line-height:1.0">Молчание, которое громче слов</div>
+      <p class="text-base md:text-lg leading-relaxed mb-4" style="color:#2a221b">Последнее утро — время тишины. Здесь нечего ждать и некуда торопиться: в Открытом Храме вы остаётесь наедине с тем, что поднялось за эти дни, чтобы запечатать этот опыт и забрать его с собой.</p>
+      <p class="text-base md:text-lg leading-relaxed mb-4" style="color:#2a221b">Вы возвращаетесь той же дорогой, но с другой внутренней конструкцией. Вы вошли в гору с одним знанием о себе, а вышли — с тем, что вспомнили самостоятельно. Именно ради этой встречи с собой настоящим люди шестнадцать лет строили Храмы руками. Они знали: придут те, кто готов.</p>
+    </div>
+    <div data-aos="fade-right" data-aos-delay="150" class="md:order-1"><img src="https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/251/h/32772e50f2fc593c5d8d840aad96f0fe.png" alt="День 6" class="w-full"/></div>
+  </div>
+</section>
+
+<!-- ========== BLOCK 6: PRICING ========== -->
+<section class="relative overflow-hidden" style="background:#2C2724;color:#f4ecd8">
+  <div class="max-w-4xl mx-auto px-6 py-20 md:py-28 text-center">
+    <h2 data-aos="fade-up" class="nm-h-title text-3xl md:text-5xl mb-4" style="color:#f4ecd8">Стоимость Путешествия</h2>
+    <div data-aos="fade-up" data-aos-delay="100" class="my-10">
+      <span class="nm-display font-bold" style="color:#d4b06a;font-size:clamp(3rem,8vw,4.6rem)">3985</span>
+      <span class="nm-display text-2xl ml-2" style="color:#d4b06a">€</span>
+    </div>
+    <h3 data-aos="fade-up" data-aos-delay="200" class="nm-h-title text-xl mb-10" style="color:#f4ecd8">Что включено:</h3>
+    <div class="grid sm:grid-cols-2 gap-6 text-left max-w-2xl mx-auto mb-16" id="pricing-items"></div>
+
+    <div data-aos="zoom-in" data-aos-delay="300" class="nm-card-dark p-10 rounded-xl max-w-md mx-auto nm-float" style="border:2px solid rgba(212,176,106,.7);background:linear-gradient(180deg,rgba(28,24,20,.95),rgba(15,12,9,.98));box-shadow:0 0 60px rgba(212,176,106,.3),0 0 120px rgba(212,176,106,.15),0 20px 40px rgba(0,0,0,.4)">
+      <p class="nm-h-title text-xl mb-4" style="color:#f4ecd8">Забронировать участие</p>
+      <div class="my-6">
+        <span class="nm-display text-5xl font-bold nm-cta-price" style="color:#d4b06a">1995</span>
+        <span class="nm-display text-2xl ml-1" style="color:#d4b06a">€</span>
+      </div>
+      <button onclick="if(typeof gcShowPopUp==='function')gcShowPopUp('b-71004')" class="nm-btn text-lg px-10 py-4">Бронировать</button>
+    </div>
+  </div>
+</section>
+
+</div><!-- /nm-root -->
+
+<script>
+// ========== AOS Init ==========
+document.addEventListener('DOMContentLoaded',function(){
+  AOS.init({duration:900,once:true,offset:80});
+
+  // ========== Hide Header on Scroll ==========
+  var header=document.getElementById('site-header');
+  var lastY=window.scrollY||0;
+  window.addEventListener('scroll',function(){
+    if(!header)return;
+    var y=window.scrollY||document.documentElement.scrollTop||0;
+    if(y<60){header.style.transform='translate3d(0,0,0)'}
+    else if(y>lastY){header.style.transform='translate3d(0,-110%,0)'}
+    else{header.style.transform='translate3d(0,0,0)'}
+    lastY=y;
+  },{passive:true});
+
+  // ========== Scroll Video ==========
+  var section=document.getElementById('video-section');
+  var frame=document.getElementById('video-frame');
+  function updateVideo(){
+    if(!section||!frame)return;
+    var rect=section.getBoundingClientRect();
+    var sh=section.offsetHeight;
+    var scrolled=-rect.top;
+    var progress=Math.max(0,Math.min(1,scrolled/(sh-window.innerHeight)));
+    var minW=60,maxW=100;
+    var w=minW+(maxW-minW)*progress;
+    var radius=20*(1-progress);
+    var isMobile=window.innerWidth<768;
+    var vwPx=window.innerWidth*minW/100;
+    var startH=isMobile?(vwPx/window.innerHeight)*100:Math.min((vwPx/window.innerHeight)*100,75);
+    var h=startH+(100-startH)*progress;
+    frame.style.width=Math.min(window.innerWidth*w/100,document.documentElement.clientWidth)+'px';
+    frame.style.height=h+'vh';
+    frame.style.borderRadius=radius+'px';
+  }
+  window.addEventListener('scroll',updateVideo,{passive:true});
+  updateVideo();
+
+  // ========== Parallax ==========
+  var pImg=document.getElementById('parallax-img');
+  if(pImg){
+    window.addEventListener('scroll',function(){
+      var r=pImg.parentElement.getBoundingClientRect();
+      pImg.style.transform='translateY('+r.top*0.35+'px)';
+    },{passive:true});
+  }
+
+  // ========== Populate lists ==========
+  var iconItems=[
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/297/h/66f54a17df616f2a28c9de9b58dad1a3.png',text:'Живое участие в мистерии, проводником которой буду я, Наталия Милагра'},
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/91/h/3adfb525e8a363963fa6b7044013448a.png',text:'Индивидуальный алхимический маршрут по Местам Силы, выстроенный как путь внутреннего посвящения'},
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/186/h/5231d7d4f10fb304c3b8b8165dbeb676.png',text:'Персональные энергетические активации на протяжении всего ретрита для мягкого раскрытия и закрепления новых состояний'},
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/52/h/503ad14c67eab66519a5a276940963f4.png',text:'Мощь синергии Светочей — участников ретрита, создающих единое поле поддержки, силы и пробуждения'},
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/325/h/ed3b8f133afdcd5c461d25a07f45dc31.png',text:'Мистерия, которая остаётся с вами на всю жизнь и продолжает раскрываться после возвращения'},
+  ];
+  var il=document.getElementById('icon-list');
+  iconItems.forEach(function(item,i){
+    var d=document.createElement('div');
+    d.className='flex items-center gap-6';
+    d.setAttribute('data-aos','fade-up');
+    d.setAttribute('data-aos-delay',String(i*100));
+    d.innerHTML='<img src="'+item.icon+'" alt="" class="w-20 h-20 rounded-full nm-icon-float flex-shrink-0"/><p class="text-lg leading-relaxed" style="color:#2a221b">'+item.text+'</p>';
+    il.appendChild(d);
+  });
+
+  // Tourist
+  var touristItems=['Наблюдает за происходящим снаружи.','Приезжает, чтобы слушать новые концепции.','Ищет эмоциональных впечатлений и отдыха.','Находится рядом с планетарным циклом.'];
+  var tl=document.getElementById('tourist-list');
+  touristItems.forEach(function(t){
+    var li=document.createElement('li');
+    li.className='flex items-start gap-3';
+    li.style.color='#ebe0c5';
+    li.innerHTML='<span class="nm-point-bullet mt-1.5" style="color:#a8967a">○</span><span class="text-base">'+t+'</span>';
+    tl.appendChild(li);
+  });
+
+  // Participant
+  var partItems=['Становится функциональной частью пространства.','Приезжает, чтобы тело вспомнило скрытое знание.','Пропускает информацию в клетки через движение и ритуал.','Сознательно стоит внутри планетарного цикла, усиливая живую антенну.'];
+  var pl=document.getElementById('participant-list');
+  partItems.forEach(function(t){
+    var li=document.createElement('li');
+    li.className='flex items-start gap-3';
+    li.style.color='#f4ecd8';
+    li.innerHTML='<span class="nm-point-bullet mt-1.5" style="color:#d4b06a">✦</span><span class="text-base">'+t+'</span>';
+    pl.appendChild(li);
+  });
+
+  // Day 3 items
+  var d3=[
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/371/h/1c267b0a4a668dccc7dfa511df0c35ed.png',text:'<strong>Через Лабиринт</strong>: древнюю технологию встречи с собой без возможности уйти в сторону. Здесь затихает ум и проявляется ваша подлинная природа.'},
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/70/h/3a2376f0f9071757ab28c8d277746ff7.png',text:'<strong>Сельфика</strong>: Соприкосновение с атлантической технологией в Праносельф-сеансе мы очистим информационное поле от старых паттернов и наполнимся чистой энергией.'},
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/79/h/42395ee773af65d6ab3883285698f28b.png',text:'<strong>Зал Времени Народов</strong>: Завершение дня под звуки гонга. Целительная сила звука уберет лишний шум, позволяя вам в наступившей тишине услышать свой настоящий голос и соединить все линии своей судьбы в единую точку.'},
+  ];
+  var d3c=document.getElementById('day3-items');
+  d3.forEach(function(item,i){
+    var d=document.createElement('div');
+    d.className='flex items-start gap-4';
+    d.setAttribute('data-aos','fade-up');
+    d.setAttribute('data-aos-delay',String(i*100));
+    d.innerHTML='<img src="'+item.icon+'" alt="" class="w-14 h-14 rounded-full nm-icon-float flex-shrink-0"/><p class="text-base leading-relaxed" style="color:#ebe0c5">'+item.text+'</p>';
+    d3c.appendChild(d);
+  });
+
+  // Day 4 items
+  var d4=[
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/141/h/59169ace766539ab70351be4b7bb0c40.png',label:'Утром',text:'в Залах Зеркал или Воды мы сонастроимся с кристаллической решёткой Земли, вписывая ваши личные коды в новую реальность.'},
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/131/h/2ae12e036cf194322510876cfde4b34b.png',label:'Днём',text:'в каменном круге у огня вы станете частью живой антенны, пропуская через себя обновляющие частоты планеты.'},
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/158/h/9c3d69452d75cd638e76fada13396b21.png',label:'Вечером',text:'священный танец с Арой переведёт весь прожитый опыт из полевых структур в биологию вашего тела.'},
+  ];
+  var d4c=document.getElementById('day4-items');
+  d4.forEach(function(item,i){
+    var d=document.createElement('div');
+    d.className='flex items-start gap-4';
+    d.setAttribute('data-aos','fade-up');
+    d.setAttribute('data-aos-delay',String(i*100));
+    d.innerHTML='<img src="'+item.icon+'" alt="" class="w-16 h-16 nm-icon-float flex-shrink-0"/><p class="text-base leading-relaxed" style="color:#2a221b"><strong>'+item.label+'</strong> '+item.text+'</p>';
+    d4c.appendChild(d);
+  });
+
+  // Pricing items
+  var pr=[
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/288/h/c2387ec05fc8eb27ca0df0e42c6c1399.png',text:'Участие в программе инициации и ритуалов'},
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/163/h/f80bf87e9e48290db253b619831c57fa.png',text:'Трансферы: 2 трансфера из/в Турин, перемещения по точкам программы'},
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/153/h/2fdbb491549375444d780dde4e65f0b2.png',text:'Обеды и ужины (в семьях, кафе, доставка, ресторан в замке), вегетарианское фикс-меню. В Абатоне — также завтраки'},
+    {icon:'https://fs05.gcfiles.net/fileservice/file/download/a/17088/sc/274/h/46973a5f0f1ee0fbbacb28a122f1524f.png',text:'Проживание по 2 чел в комнате в Абатоне (доплата за одноместное проживание — 160 €) или проживание за пределами Абатона, в апартаментах в Видракко'},
+  ];
+  var prc=document.getElementById('pricing-items');
+  pr.forEach(function(item,i){
+    var d=document.createElement('div');
+    d.className='flex items-start gap-4';
+    d.setAttribute('data-aos','fade-up');
+    d.setAttribute('data-aos-delay',String(i*80));
+    d.innerHTML='<img src="'+item.icon+'" alt="" class="w-14 flex-shrink-0 nm-icon-float" style="aspect-ratio:1/1;object-fit:contain"/><p class="text-base leading-relaxed" style="color:#ebe0c5">'+item.text+'</p>';
+    prc.appendChild(d);
+  });
+});
+</script>
+</body>
+</html>
